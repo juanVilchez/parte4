@@ -1,0 +1,179 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.sap.jvm.profiling.ui;singleton:=true
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.3.0",org.ec
+ lipse.core.resources;bundle-version="3.3.0",org.eclipse.jdt.junit;bun
+ dle-version="3.3.0",org.eclipse.pde.ui;bundle-version="3.3.0";resolut
+ ion:=optional,org.eclipse.ui;bundle-version="3.3.0",org.eclipse.ui.id
+ e;bundle-version="3.3.0",org.eclipse.debug.core;bundle-version="3.3.0
+ ",org.eclipse.debug.ui;bundle-version="3.3.0",org.eclipse.jdt.core;bu
+ ndle-version="3.3.0",org.eclipse.jdt.launching;bundle-version="3.3.0"
+ ,org.eclipse.jdt.debug;bundle-version="3.3.0",org.eclipse.jdt.debug.u
+ i;bundle-version="3.2.0",org.eclipse.jdt.ui;bundle-version="3.3.0",or
+ g.eclipse.ui.console;bundle-version="3.2.0",org.eclipse.core.filesyst
+ em;bundle-version="1.1.0",com.sap.jvm.util;bundle-version="[2.2.23,2.
+ 2.23]",com.sap.jvm.util5;bundle-version="[2.2.23,2.2.23]",org.eclipse
+ .search;bundle-version="3.3.0",org.eclipse.ui.workbench.texteditor;bu
+ ndle-version="3.3.0",org.eclipse.jface.text;bundle-version="3.3.0",or
+ g.eclipse.ui.intro;bundle-version="3.2.0",com.sap.jvm.inspector;bundl
+ e-version="[2.2.23,2.2.23]",com.sap.jvm.profiling.controller;bundle-v
+ ersion="[2.2.23,2.2.23]",com.sap.jvm.profiling.core;bundle-version="[
+ 2.2.23,2.2.23]",com.sap.jvm.profiling.i18n;bundle-version="[2.2.23,2.
+ 2.23]",com.sap.jvm.profiling.presentation;bundle-version="[2.2.23,2.2
+ .23]",com.sap.jvm.profiling.snapshot;bundle-version="[2.2.23,2.2.23]"
+ ,com.sap.jvm.profiling.ui.icons;bundle-version="[2.2.23,2.2.23]",com.
+ sap.jvm.profiling.ui.library;bundle-version="[2.2.23,2.2.23]",com.sap
+ .jvm.profiling.ui.util;bundle-version="[2.2.23,2.2.23]",com.sap.jvm.p
+ rofiling.ui.widgets;bundle-version="[2.2.23,2.2.23]",com.sap.jvm.prof
+ iling.ui.workbench;bundle-version="[2.2.23,2.2.23]",com.sap.jvm.traci
+ ng;bundle-version="[2.2.23,2.2.23]",org.eclipse.equinox.security;bund
+ le-version="1.1.100";resolution:=optional    
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: SAP
+SQU-INLINE-STARTBundle-Version: $tools22Version SQU-INLINE-END
+Ant-Version: Apache Ant 1.9.4
+Export-Package: com.sap.jvm.profiling.launching,com.sap.jvm.profiling.
+ ui,com.sap.jvm.profiling.ui.actions,com.sap.jvm.profiling.ui.connecti
+ on,com.sap.jvm.profiling.ui.launching.configuration,com.sap.jvm.profi
+ ling.ui.launching.shortcuts,com.sap.jvm.profiling.ui.perspective,com.
+ sap.jvm.profiling.ui.target,com.sap.jvm.profiling.ui.views
+Bundle-Name: SAP JVM Profiler UI Frontend
+Bundle-Version: 2.2.23 
+Bundle-Localization: plugin
+Bundle-ClassPath: profiling_2.2_frontend.jar
+Bundle-Activator: com.sap.jvm.profiling.ui.ProfilingPlugin
+Created-By: 5.1.103 (SAP AG)
+SQU-INLINE-STARTRequire-Bundle: org.eclipse.core.runtime;bundle-versio
+ n="3.3.0",org.eclipse.core.resources;bundle-version="3.3.0",org.eclip
+ se.jdt.junit;bundle-version="3.3.0",org.eclipse.pde.ui;bundle-version
+ ="3.3.0";resolution:=optional,org.eclipse.ui;bundle-version="3.3.0",o
+ rg.eclipse.ui.ide;bundle-version="3.3.0",org.eclipse.debug.core;bundl
+ e-version="3.3.0",org.eclipse.debug.ui;bundle-version="3.3.0",org.ecl
+ ipse.jdt.core;bundle-version="3.3.0",org.eclipse.jdt.launching;bundle
+ -version="3.3.0",org.eclipse.jdt.debug;bundle-version="3.3.0",org.ecl
+ ipse.jdt.debug.ui;bundle-version="3.2.0",org.eclipse.jdt.ui;bundle-ve
+ rsion="3.3.0",org.eclipse.ui.console;bundle-version="3.2.0",org.eclip
+ se.core.filesystem;bundle-version="1.1.0",com.sap.jvm.util;bundle-ver
+ sion=$nonToolsRange,com.sap.jvm.util5;bundle-version=$nonToolsRange,o
+ rg.eclipse.search;bundle-version="3.3.0",org.eclipse.ui.workbench.tex
+ teditor;bundle-version="3.3.0",org.eclipse.jface.text;bundle-version=
+ "3.3.0",org.eclipse.ui.intro;bundle-version="3.2.0",com.sap.jvm.inspe
+ ctor;bundle-version=$nonToolsRange,com.sap.jvm.profiling.controller;b
+ undle-version=$tools22Range,com.sap.jvm.profiling.core;bundle-version
+ =$tools22Range,com.sap.jvm.profiling.i18n;bundle-version=$tools22Rang
+ e,com.sap.jvm.profiling.presentation;bundle-version=$tools22Range,com
+ .sap.jvm.profiling.snapshot;bundle-version=$tools22Range,com.sap.jvm.
+ profiling.ui.icons;bundle-version=$tools22Range,com.sap.jvm.profiling
+ .ui.library;bundle-version=$tools22Range,com.sap.jvm.profiling.ui.uti
+ l;bundle-version=$tools22Range,com.sap.jvm.profiling.ui.widgets;bundl
+ e-version=$tools22Range,com.sap.jvm.profiling.ui.workbench;bundle-ver
+ sion=$tools22Range,com.sap.jvm.tracing;bundle-version=$nonToolsRange,
+ org.eclipse.equinox.security;bundle-version="1.1.100";resolution:=opt
+ ional    SQU-INLINE-END
+
+Name: icons/method_parameter_analysis.gif
+SHA-256-Digest: YYXjBghyPlCPgfaPyliQYRPuPLxhsq90JXGNEiCnPbE=
+
+Name: plugin.xml
+SHA-256-Digest: vcFjkNSQWhBnz4JeLaZBv2HLMxa44q2C8WkKz0Y99DA=
+
+Name: icons/thread_analysis.gif
+SHA-256-Digest: KZKcffti3vdtAc2wnhhog/QGZZFGeUjlH+S1UFVPXQg=
+
+Name: icons/profiler.gif
+SHA-256-Digest: Yynl9kg4nJyXwyBfjsEd4HizZ8lDWkrsU16WM4bIaps=
+
+Name: icons/perspective.gif
+SHA-256-Digest: RMhO8RFFmFw+1qRkeF4xFtcdZA0tLnt8NR/NhaakIIA=
+
+Name: icons/io_analysis.gif
+SHA-256-Digest: S/cFY0Krx8uqkI+kdQb+VSq1QwEReyqahArHN5Ui0xI=
+
+Name: intro/whatsnewExtensionContent.xml
+SHA-256-Digest: Lmoq+F2uVvI9PkA1xva+QYLLQfT/kgudKd4i7xjdyx0=
+
+Name: icons/neo.gif
+SHA-256-Digest: EA9gQK6Cp+jo/py5YhQGSL/uKrXeAtqyGcIafyl+xkc=
+
+Name: icons/online_prof_app.gif
+SHA-256-Digest: tZkWSKDdxZ03c+18JmdhyCpU+NpaARVlluP3wBowJE8=
+
+Name: intro/css/graphics/obj_48/profiler.png
+SHA-256-Digest: 09O2+S8mBjSkZ6p2AnIqrAUusAm6YrYV++3YvGK2xvM=
+
+Name: icons/profiling_exc.gif
+SHA-256-Digest: /9PG9Wirhrzz5wYcel9ELSTxMDH5jvgSxZ9O1luSnBk=
+
+Name: about.ini
+SHA-256-Digest: iVVEIYj9J//OToC+aLY3FdClD9VdzoEs5qkjKJj30i0=
+
+Name: icons/net_analysis.gif
+SHA-256-Digest: 1oCkz+4lxT48j5NSNq6cnbMB19tzl9cJ+rN6xtZElBY=
+
+Name: plugin.properties
+SHA-256-Digest: l4jDI98DJKonQNMWKw5G6fYm3frnbd9G0Hn0N7Rqaoc=
+
+Name: icons/method_analysis.gif
+SHA-256-Digest: xnZDASEpmCplGh2W3HVNFR/bfsqQCQ0iyOzO8sFNiuk=
+
+Name: intro/css/graphics/obj_48/profiler_group.png
+SHA-256-Digest: tR8DRCf2gtZ/IUdBL9g5eR/hIVOrrSHXNKzRiEf6dVo=
+
+Name: icons/offline_prof_app.gif
+SHA-256-Digest: 32b1WBaPrlHx2BLIR+678NsuZ79kYki0UGAIDmITaMY=
+
+Name: icons/performance_analysis.gif
+SHA-256-Digest: LfZF3SVOBJFmKHdjXR7bJl37vmZn5evWch0ykjzVOgw=
+
+Name: icons/vm_monitor.gif
+SHA-256-Digest: LntIdkaijSrwIVhnCHtktTebTE6xYP5oE/2XbLa8xgc=
+
+Name: intro/css/overview.css
+SHA-256-Digest: /4WB8bLmD24uSOXUZ0HhPCYGylr/xTyFfmi2i5aRRwg=
+
+Name: icons/profileLast.gif
+SHA-256-Digest: rTH00pvdKUFaL+RwtA3cv0B5mN9dcYK9m/3y7bWg/tA=
+
+Name: icons/synchronization_analysis.png
+SHA-256-Digest: xt34NscpAIlpf24W44ocRAxXJJ/9iP0jduGA/qilp7Y=
+
+Name: intro/overviewExtensionContent.xml
+SHA-256-Digest: Iy2x1nGZObZW0vvdGvzKF9B8hA6J91Mcv9k3JcvaaJg=
+
+Name: intro/css/whatsnew.css
+SHA-256-Digest: kKEZfkXn8nYMGYgZJYH1AErHG6n/3Pf+S5qgg+v06zM=
+
+Name: icons/parameter.gif
+SHA-256-Digest: 8lzTtB9lug2oLMJEzGLEEtOBpdV7tQQoz6JpXQyDuT4=
+
+Name: icons/profileLast_disabled.gif
+SHA-256-Digest: gf7/O6DLBRfEFiF1WEG1OzUKFiHnH7+Da+BGYiyJuxE=
+
+Name: intro/css/graphics/obj_48/profilerhov.png
+SHA-256-Digest: Dhc+pX80uWXRD8kslMHaky3Pd20QbBENOPpm0nCXO+E=
+
+Name: icons/prof_app.gif
+SHA-256-Digest: SXq60V2M9U8SZeao+Uylw/OPH2tegX03prtCdlIDZRo=
+
+Name: intro/css/swt.properties
+SHA-256-Digest: ure0XaoEtwGe7PtYLMWL7CDOXpM20FMbPWv3Eid41Sk=
+
+Name: intro/css/whatsnew.properties
+SHA-256-Digest: JNV6qS7Tmhe+ZPNzGym6JUZ9aFljbUtELZbVVD7aAPY=
+
+Name: icons/allocation_analysis.gif
+SHA-256-Digest: K4t2QMnnGbHGrGZcy1GQVel4k7fXbaOXPchtTkIQmjM=
+
+Name: icons/vm_explorer.gif
+SHA-256-Digest: pUMEOO9OrgrULQsNkJsoFa60Zp6/lzpGkFHtJjmhJRM=
+
+Name: icons/profilingWiz.gif
+SHA-256-Digest: b5Q7YreY6uU1E3ixD6XkT3+QZHo1YauNfFB8uoEqjus=
+
+Name: icons/vm_monitor_disabled.gif
+SHA-256-Digest: DRHAfEBxuTwH8ZTuXUT2Gy1nCjAnNGW3PWWS70N9/Zg=
+
+Name: profiling_2.2_frontend.jar
+SHA-256-Digest: JqxY8DXrlPH7B9uem87MTNuSVIbDpof8s3qwLlkQChc=
+

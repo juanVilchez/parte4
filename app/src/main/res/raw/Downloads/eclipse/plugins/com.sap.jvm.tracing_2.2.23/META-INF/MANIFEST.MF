@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.4
+Bundle-SymbolicName: com.sap.jvm.tracing;singleton:=true
+Export-Package: com.sap.jvm.tracing
+Bundle-Name: SAP JVM Tracing API
+Bundle-Version: 2.2.23  
+Bundle-ClassPath: sapjvm_tracing_api.jar
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: SAP
+Created-By: 5.1.103 (SAP AG)
+SQU-INLINE-STARTBundle-Version: $nonToolsVersion  SQU-INLINE-END
+
+Name: sapjvm_tracing_api.jar
+SHA-256-Digest: +cPbGjtMDgDnOICIyUjSEi80IwF1btjAUB3KhhLbR7E=
+

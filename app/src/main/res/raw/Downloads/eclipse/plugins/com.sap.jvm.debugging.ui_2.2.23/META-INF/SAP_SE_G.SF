@@ -1,0 +1,39 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: VrRfaAuqQcLlD6G3p2QOdIITopAPU
+ /6rbuk/NR1DxCA=
+SHA-256-Digest-Manifest: qwBVSOIYvZGcvmkcSZh0JME688Scuqby85Jbx1BQiwk=
+Created-By: 1.8.0_45 (Oracle Corporation)
+
+Name: lib/org.apache.httpcomponents.httpcore_4.2.3.jar
+SHA-256-Digest: FDtKtGs7f9KQZA+lrcMvs80hDe3lSO4Fd/5UIN+1BZ4=
+
+Name: plugin.xml
+SHA-256-Digest: 4BI7CKTBcxukE6BF7Zf9EFUHmTTgNiEhFZF7+8CwHVU=
+
+Name: icons/insp_sbook.gif
+SHA-256-Digest: QiAaFKROFV3R/RCpBejbVSX1n10XDuJZHt+PIB3xSYs=
+
+Name: debugging_2.2_ui_eclipse.jar
+SHA-256-Digest: h2ftRyGPfAtySVVehNgDsIAinkc7WBIHNcpBLIhcwbk=
+
+Name: icons/return_values_options.png
+SHA-256-Digest: pAeMsOKsVDV017OkIg0u/Ih4B7ifZUSmBGcFiXkNZ5Y=
+
+Name: plugin.properties
+SHA-256-Digest: +IYE7/rgf31F5JMTk+fh+/OLEFn1J2ymiFesOADGiO0=
+
+Name: lib/org.apache.httpcomponents.httpclient_4.2.3.jar
+SHA-256-Digest: 0Z1OJxssAMIXdUtTaDIMu0XEmAl7TstaXKcCYM5I2AY=
+
+Name: icons/neo.gif
+SHA-256-Digest: a7ihEXJoxz0WrjmQTW389GVoS1cIM1AfNR+ttzyhQAA=
+
+Name: icons/disassemble_editor.gif
+SHA-256-Digest: wAasG2o4/w1BXMESeIBJe/2hilrCCluzd/z4iGiQSIc=
+
+Name: icons/watch_exp.gif
+SHA-256-Digest: f4D+ZGA9ScmkrgSTzXTJb6S1aP4QtmxaERIHtXSUx3o=
+
+Name: lib/commons-logging-1.1.1.jar
+SHA-256-Digest: 2fNxBjK76AsVwb3w3Z5nAogDwFkwawOPqOJ+qZBVLZI=
+

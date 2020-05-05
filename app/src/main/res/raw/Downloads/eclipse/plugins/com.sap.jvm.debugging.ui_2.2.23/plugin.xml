@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="cloudlandscapes" name="Cloud Landscapes" schema="schema/cloudlandscapes.exsd"/>
+   <extension
+         point="org.eclipse.debug.core.launchDelegates">
+      <launchDelegate
+            delegate="com.sap.jvm.debugging.ui.launching.DebuggingRemoteDelegate"
+            delegateDescription="The SAP JVM Debugger supports attaching to and debugging remote Java applications."
+            id="com.sap.jvm.debugging.ui.launching.DebuggingRemoteDelegate"
+            modes="debug"
+            name="SAP JVM Debugger"
+            sourceLocatorId="com.sap.jvm.debugging.ui.SapJvmDebuggingSourceLocator"
+            sourcePathComputerId="org.eclipse.jdt.launching.sourceLookup.javaSourcePathComputer"
+            type="org.eclipse.jdt.launching.remoteJavaApplication">
+      </launchDelegate>
+      <launchDelegate
+            delegate="com.sap.jvm.debugging.ui.launching.DebuggingLocalDelegate"
+            delegateDescription="The SAP JVM Debugger supports running and debugging local Java applications."
+            id="com.sap.jvm.debugging.ui.launching.DebuggingLocalDelegate"
+            modes="debug"
+            name="SAP JVM Debugger"
+            sourceLocatorId="com.sap.jvm.debugging.ui.SapJvmDebuggingSourceLocator"
+            sourcePathComputerId="org.eclipse.jdt.launching.sourceLookup.javaSourcePathComputer"
+            type="org.eclipse.jdt.launching.localJavaApplication">
+      </launchDelegate>
+      <launchDelegate
+            delegate="com.sap.jvm.debugging.ui.launching.DebuggingPDEDelegate"
+            delegateDescription="The SAP JVM Debugger is used to run or debug a separate instance of an Eclipse application."
+            id="com.sap.jvm.debugging.ui.launching.DebuggingPDEDelegate"
+            modes="debug"
+            name="SAP JVM Debugger"
+            sourceLocatorId="com.sap.jvm.debugging.ui.SapJvmDebuggingSourceLocator"
+            sourcePathComputerId="org.eclipse.jdt.launching.sourceLookup.javaSourcePathComputer"
+            type="org.eclipse.pde.ui.RuntimeWorkbench">
+      </launchDelegate>
+      <launchDelegate
+            delegate="com.sap.jvm.debugging.ui.launching.DebuggingJUnitDelegate"
+            delegateDescription="The SAP JVM Debugger supports running and debugging JUnit tests and test suites."
+            id="com.sap.jvm.debugging.ui.launching.DebuggingJUnitDelegate"
+            modes="debug"
+            name="SAP JVM Debugger"
+            sourceLocatorId="com.sap.jvm.debugging.ui.SapJvmDebuggingSourceLocator"
+            sourcePathComputerId="org.eclipse.jdt.launching.sourceLookup.javaSourcePathComputer"
+            type="org.eclipse.jdt.junit.launchconfig">
+      </launchDelegate>
+      <launchDelegate
+            delegate="com.sap.jvm.debugging.ui.launching.DebuggingPDEJUnitDelegate"
+            delegateDescription="The SAP JVM Debugger is used to run and debug test suites for plug-in projects."
+            id="com.sap.jvm.debugging.ui.launching.DebuggingPDEJUnitDelegate"
+            modes="debug"
+            name="SAP JVM Debugger"
+            sourceLocatorId="com.sap.jvm.debugging.ui.SapJvmDebuggingSourceLocator"
+            sourcePathComputerId="org.eclipse.jdt.launching.sourceLookup.javaSourcePathComputer"
+            type="org.eclipse.pde.ui.JunitLaunchConfig">
+      </launchDelegate>
+      <launchDelegate
+            delegate="com.sap.jvm.debugging.ui.launching.DebuggingOSGiDelegate"
+            delegateDescription="The SAP JVM Debugger is used to launch an OSGi framework and run or debug OSGi bundles."
+            id="com.sap.jvm.debugging.ui.launching.DebuggingOSGiDelegate"
+            modes="debug"
+            name="SAP JVM Debugger"
+            sourceLocatorId="com.sap.jvm.debugging.ui.SapJvmDebuggingSourceLocator"
+            sourcePathComputerId="org.eclipse.jdt.launching.sourceLookup.javaSourcePathComputer"
+            type="org.eclipse.pde.ui.EquinoxLauncher">
+      </launchDelegate>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.debugModelPresentations">
+      <debugModelPresentation
+            class="com.sap.jvm.debugging.ui.presentation.DebuggingModelPresentation"
+            id="com.sap.jvm.debugging.ui.RemoteDebuggingPresentation">
+      </debugModelPresentation>
+   </extension>
+   <extension
+         point="org.eclipse.debug.core.sourceLocators">
+      <sourceLocator
+            class="com.sap.jvm.debugging.ui.source.SapJvmSourceLookupDirector"
+            id="com.sap.jvm.debugging.ui.SapJvmDebuggingSourceLocator"
+            name="SAP JVM Debugging Source Locator">
+      </sourceLocator>
+   </extension>
+   <extension
+         point="org.eclipse.jdt.ui.javaEditorTextHovers">
+      <hover
+            class="com.sap.jvm.debugging.ui.source.SourceCodeHover"
+            id="com.sap.jvm.debugging.ui.source.SourceCodeHover">
+      </hover>
+   </extension>
+   
+   <!-- Cloud Debugging -->   
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="com.sap.jvm.debugging.ui.launching.CloudDebuggingServiceDelegate"
+            id="com.sap.jvm.debugging.ui.launching.SapJvmCloudDebuggingConfigurationType"
+            migrationDelegate="org.eclipse.jdt.internal.launching.JavaMigrationDelegate"
+            modes="debug"
+            name="SAP HANA Cloud Debugger"
+            public="true"
+            sourceLocatorId="com.sap.jvm.debugging.ui.SapJvmDebuggingSourceLocator"
+            sourcePathComputerId="org.eclipse.jdt.launching.sourceLookup.javaSourcePathComputer">
+      </launchConfigurationType>
+   </extension>
+
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            configTypeID="com.sap.jvm.debugging.ui.launching.SapJvmCloudDebuggingConfigurationType"
+            icon="icons/neo.gif"
+            id="com.sap.jvm.debugging.ui.launching.SapJvmCloudDebuggingConfigurationTypeImage">
+      </launchConfigurationTypeImage>
+   </extension>
+   
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="com.sap.jvm.debugging.ui.launching.CloudDebuggingTabGroup"
+            id="com.sap.jvm.debugging.ui.launching.CloudDebuggingTabGroup"
+            type="com.sap.jvm.debugging.ui.launching.SapJvmCloudDebuggingConfigurationType">
+      </launchConfigurationTabGroup>
+   </extension>
+   
+   <!-- Cloud Debugging end -->   
+   <extension
+         point="org.eclipse.debug.core.watchExpressionDelegates">
+      <watchExpressionDelegate
+            debugModel="com.sap.jvm.debugging.ui.RemoteDebuggingPresentation"
+            delegateClass="com.sap.jvm.debugging.ui.model.WatchExpressionDelegate">
+      </watchExpressionDelegate>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="com.sap.jvm.debugging.ui.FilteredJavaVariableActions"
+            objectClass="com.sap.jvm.debugging.ui.model.IVariableImpl">
+         <visibility>
+            <objectState
+                  name="VariableActionFilter"
+                  value="isValidForDetailFormatter">
+            </objectState>
+         </visibility>
+         <action
+               class="com.sap.jvm.debugging.ui.actions.NewDetailFormatterAction"
+               id="com.sap.jvm.debugging.ui.actions.NewDetailFormatter"
+               label="New Detail Formatter..."
+               menubarPath="emptyNavigationGroup">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="com.sap.jvm.debugging.ui.model.IStackFrameImpl"
+            id="com.sap.jvm.debugging.ui.ReceivingStackFrameActions">
+         <filter
+               name="ReceivingStackFrameActionFilter"
+               value="isReceivingType">
+         </filter>
+         <action
+               label="Open Actual Type Hier&amp;archy"
+               helpContextId="open_receiving_type_hierarchy_action_context"
+               tooltip="Open the Actual Type's Hierarchy"
+               class="com.sap.jvm.debugging.ui.actions.OpenReceivingTypeHierarchyAction"
+               menubarPath="emptyEditGroup"
+               enablesFor="1"
+               id="com.sap.jvm.debugging.ui.actions.OpenReceivingTypeHierarchy">
+         </action>
+         <action
+               label="Open Actual T&amp;ype"
+               helpContextId="open_on_receiving_type_action_context"
+               tooltip="Open the Actual Type"
+               class="com.sap.jvm.debugging.ui.actions.OpenReceivingTypeAction"
+               menubarPath="emptyEditGroup"
+               enablesFor="1"
+               id="com.sap.jvm.debugging.ui.actions.OpenReceivingType">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="com.sap.jvm.debugging.ui.model.IStackFrameImpl"
+            id="com.sap.jvm.debugging.DeclaringStackFrameActions">
+         <action
+               label="Open Declared Type &amp;Hierarchy"
+               helpContextId="open_declaring_type_hierarchy_action_context"
+               tooltip="Open the Declared Type's Hierarchy"
+               class="com.sap.jvm.debugging.ui.actions.OpenDeclaringTypeHierarchyAction"
+               menubarPath="emptyEditGroup"
+               enablesFor="1"
+               id="com.sap.jvm.debugging.ui.actions.OpenDeclaringTypeHierarchy">
+         </action>
+         <action
+               label="&amp;Open Declared Type"
+               helpContextId="open_on_declaring_type_action_context"
+               tooltip="Open the Variable's Declared Type"
+               class="com.sap.jvm.debugging.ui.actions.OpenDeclaringTypeAction"
+               menubarPath="emptyEditGroup"
+               enablesFor="1"
+               id="com.sap.jvm.debugging.ui.actions.OpenDeclaringType">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="com.sap.jvm.debugging.ui.model.IVariableImpl"
+            id="com.sap.jvm.debugging.ui.FilteredJavaVariableActions">
+         <filter
+               name="PrimitiveVariableActionFilter"
+               value="isNotPrimitive">
+         </filter>
+         <filter
+               name="ConcreteVariableActionFilter"
+               value="isConcrete">
+         </filter>
+         <action
+               label="Open Actual Type Hierarch&amp;y"
+               helpContextId="open_variable_concrete_type_hierarchy_action_context"
+               tooltip="Open the Variable's Actual Implementation Type Hierarchy"
+               class="com.sap.jvm.debugging.ui.actions.OpenVariableConcreteTypeHierarchyAction"
+               menubarPath="emptyNavigationGroup"
+               enablesFor="1"
+               id="com.sap.jvm.debugging.ui.actions.OpenVariableConcreteTypeHierarchy">
+         </action>
+         <action
+               label="Open Act&amp;ual Type"
+               helpContextId="open_variable_concrete_type_action_context"
+               tooltip="Open the Variable's Actual Implementation Type"
+               class="com.sap.jvm.debugging.ui.actions.OpenVariableConcreteTypeAction"
+               menubarPath="emptyNavigationGroup"
+               enablesFor="1"
+               id="com.sap.jvm.debugging.ui.actions.OpenVariableConcreteType">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="com.sap.jvm.debugging.ui.model.IVariableImpl"
+            id="com.sap.jvm.debugging.ui.FilteredJavaVariableActions">
+         <visibility>
+            <and>
+            <not>
+               <objectState
+                     name="JavaVariableFilter"
+                     value="isReferenceListVariable">
+               </objectState>
+            </not>
+            <not>
+               <objectState
+                     name="JavaVariableFilter"
+                     value="isPlaceholderValue">
+               </objectState>
+            </not>
+            </and>
+         </visibility>
+         <filter
+               name="PrimitiveVariableActionFilter"
+               value="isPrimitive">
+         </filter>
+         <action
+               label="Open Declared Type &amp;Hierarchy"
+               helpContextId="open_variable_declared_type_hierarchy_action_context"
+               tooltip="Open the Variable's Declared Type Hierarchy"
+               class="com.sap.jvm.debugging.ui.actions.OpenVariableDeclaredTypeHierarchyAction"
+               menubarPath="emptyNavigationGroup"
+               enablesFor="1"
+               id="com.sap.jvm.debugging.ui.actions.OpenVariableDeclaredTypeHierarchy">
+         </action>
+         <action
+               label="&amp;Open Declared Type"
+               helpContextId="open_on_variable_type_action_context"
+               tooltip="Open the Variable's Declared Type"
+               class="com.sap.jvm.debugging.ui.actions.OpenVariableDeclaredTypeAction"
+               menubarPath="emptyNavigationGroup"
+               enablesFor="1"
+               id="com.sap.jvm.debugging.ui.actions.OpenVariableDeclaredType">
+         </action>
+      </objectContribution>
+      <!-- Watch and Inspect Action Start -->
+      <viewerContribution
+            targetID="#CompilationUnitEditorContext"
+            id="org.eclipse.jdt.debug.ui.CUPopupActions">
+         <visibility>
+            <and>
+               <systemProperty
+                     name="com.sap.jvm.debugging.ui.debuggerActive"
+                     value="true">
+               </systemProperty>
+               <objectClass
+                     name="org.eclipse.jface.text.ITextSelection">
+               </objectClass>
+            </and>
+         </visibility>
+         <action
+               label="Inspect"
+               icon="icons/insp_sbook.gif"
+               helpContextId="inspect_action_context"
+               definitionId="com.sap.jvm.debugging.ui.commands.Inspect"
+               class="com.sap.jvm.debugging.ui.actions.AdaptPopupInspectAction"
+               menubarPath="additions"
+               id="org.eclipse.jdt.debug.ui.cuPopup.Inspect">
+         </action>
+         <action
+               label="Watch"
+               icon="icons/watch_exp.gif"
+               helpContextId="watch_action_context"
+               definitionId="com.sap.jvm.debugging.ui.commands.Watch"
+               class="com.sap.jvm.debugging.ui.actions.AdaptJdtWatchAction"
+               menubarPath="additions"
+               id="org.eclipse.jdt.debug.ui.cuPopup.Watch">
+         </action>
+      </viewerContribution>
+
+      <viewerContribution
+            targetID="#ClassFileEditorContext"
+            id="org.eclipse.jdt.debug.ui.CFPopupActions">
+         <visibility>
+            <and>
+               <systemProperty
+                     name="com.sap.jvm.debugging.ui.debuggerActive"
+                     value="true">
+               </systemProperty>
+               <objectClass
+                     name="org.eclipse.jface.text.ITextSelection">
+               </objectClass>
+            </and>
+         </visibility>
+
+         <action
+               label="Inspect"
+               icon="icons/insp_sbook.gif"
+               helpContextId="inspect_action_context"
+               definitionId="com.sap.jvm.debugging.ui.commands.Inspect"
+               class="com.sap.jvm.debugging.ui.actions.AdaptPopupInspectAction"
+               menubarPath="additions"
+               id="org.eclipse.jdt.debug.ui.cfPopup.Inspect">
+         </action>
+         <action
+               label="Watch"
+               icon="icons/watch_exp.gif"
+               helpContextId="watch_action_context"
+               definitionId="com.sap.jvm.debugging.ui.commands.Watch"
+               class="com.sap.jvm.debugging.ui.actions.AdaptJdtWatchAction"
+               menubarPath="additions"
+               id="org.eclipse.jdt.debug.ui.cfPopup.Watch">
+         </action>
+      </viewerContribution>
+
+      <viewerContribution
+            targetID="org.eclipse.jdt.debug.ui.DisplayView"
+            id="org.eclipse.jdt.debug.DisplayEvaluationActions">
+         <visibility>
+            <systemProperty
+                  name="com.sap.jvm.debugging.ui.debuggerActive"
+                  value="true">
+            </systemProperty>
+         </visibility>
+ 
+         <action
+               label="Inspect"
+               icon="icons/insp_sbook.gif"
+               helpContextId="inspect_action_context"
+               definitionId="com.sap.jvm.debugging.ui.commands.Inspect"
+               class="com.sap.jvm.debugging.ui.actions.AdaptPopupInspectAction"
+               menubarPath="evaluationGroup"
+               enablesFor="+"
+               id="org.eclipse.jdt.debug.ui.displayView.Inspect">
+            <enablement>
+               <and>
+                  <systemProperty
+                        name="com.sap.jvm.debugging.ui.debuggerActive"
+                        value="true">
+                  </systemProperty>
+                  <objectClass
+                        name="org.eclipse.jface.text.ITextSelection">
+                  </objectClass>
+               </and>
+            </enablement>
+         </action>
+         <action
+               class="com.sap.jvm.debugging.ui.actions.AdaptJdtWatchAction"
+               enablesFor="+"
+               helpContextId="watch_action_context"
+               definitionId="com.sap.jvm.debugging.ui.commands.Watch"
+               icon="icons/watch_exp.gif"
+               id="org.eclipse.jdt.debug.ui.displayView.Watch"
+               label="Watch"
+               menubarPath="evaluationGroup">
+            <enablement>
+               <and>
+                  <systemProperty
+                        name="com.sap.jvm.debugging.ui.debuggerActive"
+                        value="true">
+                  </systemProperty>
+                  <objectClass
+                        name="org.eclipse.jface.text.ITextSelection">
+                  </objectClass>
+               </and>
+            </enablement>
+         </action>
+ 
+      </viewerContribution>
+      <viewerContribution
+            id="com.sap.jvm.debugging.ui.editor.DisassembleEditorBreakpointToggle"
+            targetID="#RulerContext">
+         <action
+               class="org.eclipse.debug.ui.actions.RulerToggleBreakpointActionDelegate"
+               definitionId="org.eclipse.debug.ui.commands.ToggleBreakpoint"
+               icon="java/com/sap/jvm/debugging/ui/icons/resources/decorators/brkp_obj.gif"
+               id="com.sap.jvm.Editor.toggleBreakpointAction"
+               label="Toggle Breakpoint"
+               menubarPath="additions">
+         </action>
+      </viewerContribution>
+   </extension>
+   
+   <!-- The SAP JVM sub menu in the variables view -->
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            targetID="org.eclipse.debug.ui.VariableView"
+            id="org.eclipse.jdt.debug.ui.VariableViewActions">
+         <action
+               id="com.sap.jvm.debugging.ui.ReturnValuesOptionAction"
+               class="com.sap.jvm.debugging.ui.actions.ReturnValuesOptionAction"
+               icon="icons/return_values_options.png"
+               label="Configure return values ..."
+               menubarPath="org.eclipse.jdt.debug.ui.VariableView.sapjvmSubmenu/javaPart"
+               tooltip="Let's the user change the display of return values when using the SAP JVM debugger.">
+         </action>
+         <menu
+               id="org.eclipse.jdt.debug.ui.VariableView.sapjvmSubmenu"
+               label="SAP JVM"
+               path="javaActions">
+               <groupMarker name="org.eclipse.jdt.debug.ui.javaPart"/>
+         </menu>
+      </viewContribution>
+   </extension>
+   
+   <extension point="org.eclipse.ui.commands">
+      <command
+            name="Inspect"
+            defaultHandler="com.sap.jvm.debugging.ui.actions.InspectCommandHandler"
+            categoryId="org.eclipse.debug.ui.category.run"
+            id="com.sap.jvm.debugging.ui.commands.Inspect">
+      </command>
+      <command
+            name="Watch"
+            defaultHandler="com.sap.jvm.debugging.ui.actions.WatchCommandHandler"
+            categoryId="org.eclipse.debug.ui.category.run"
+            id="com.sap.jvm.debugging.ui.commands.Watch">
+      </command>
+   </extension>
+   <extension point="org.eclipse.ui.bindings">
+      <key  sequence="M1+M3+I"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            commandId="com.sap.jvm.debugging.ui.commands.Inspect"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+      <key  sequence="M1+M3+W"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            commandId="com.sap.jvm.debugging.ui.commands.Watch"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+   </extension>
+   <!-- Watch and Inspect Action End -->
+
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup class="com.sap.jvm.debugging.ui.Startup"/>
+   </extension>
+   <extension
+         point="com.sap.jvm.profiling.ui.workbench.logdata">
+      <provider class="com.sap.jvm.debugging.ui.DebuggingLogProvider"/>
+   </extension>
+   <extension
+         point="com.sap.jvm.profiling.ui.workbench.httptunnel">
+      <provider class="com.sap.jvm.debugging.ui.HttpTunnelFactoryImpl"/>
+   </extension>
+   <extension
+         point="com.sap.jvm.profiling.ui.workbench.cloudservices">
+      <provider class="com.sap.jvm.util.cloud.CloudServiceFactory"/>
+   </extension>
+   <extension
+         point="com.sap.jvm.profiling.ui.workbench.comboeditor">
+      <provider
+            class="com.sap.jvm.debugging.ui.ComboFieldEditorFactoryImpl">
+      </provider>
+   </extension>
+   <extension
+         point="com.sap.jvm.profiling.ui.workbench.proxyprovider">
+                <provider class="com.sap.jvm.debugging.ui.ProxyProviderImpl"/>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.sap.jvm.debugging.ui.editors.SapJvmSourceViewEditor"
+            default="false"
+            icon="icons/disassemble_editor.gif"
+            id="com.sap.jvm.debugging.ui.editors.DisassembleSourceEditor"
+            name="SAPJVM Disassemble Source Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.debug.core.breakpoints">
+      <breakpoint
+            class="com.sap.jvm.debugging.ui.model.ByteCodeBreakpoint"
+            id="om.sap.jvm.debugging.breakpoints.ByteCodeBreakpoint"
+            markerType="com.sap.jvm.debugging.ByteCodeBreakpointMarker">
+      </breakpoint>
+      <breakpoint
+            class="com.sap.jvm.debugging.ui.model.DecompiledCodeBreakpoint"
+            id="om.sap.jvm.debugging.breakpoints.DecompiledCodeBreakpoint"
+            markerType="com.sap.jvm.debugging.DecompiledCodeBreakpointMarker">
+      </breakpoint>
+   </extension>
+   <extension
+         id="com.sap.jvm.debugging.ByteCodeBreakpointMarker"
+         name="Bytecode Breakpoint"
+         point="org.eclipse.core.resources.markers">
+      <persistent
+            value="true">
+      </persistent>
+      <super
+            type="org.eclipse.debug.core.lineBreakpointMarker">
+      </super>
+   </extension>
+   <extension
+         id="com.sap.jvm.debugging.DecompiledCodeBreakpointMarker"
+         name="Decompiled Code Breakpoint"
+         point="org.eclipse.core.resources.markers">
+      <persistent
+            value="true">
+      </persistent>
+      <super
+            type="org.eclipse.debug.core.breakpointMarker">
+      </super>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.adapters">
+      <factory
+            adaptableType="com.sap.jvm.debugging.ui.editors.DisassembleSourceEditor"
+            class="com.sap.jvm.debugging.ui.model.BreakpointAdapterFactory">
+         <adapter
+               type="org.eclipse.debug.ui.actions.IToggleBreakpointsTarget">
+         </adapter>
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editorActions">
+      <editorContribution
+            id="com.sap.jvm.debugging.ui.editors.DisassembleSourceEditorContribution"
+            targetID="com.sap.jvm.debugging.ui.editors.DisassembleSourceEditor">
+         <action
+               actionID="RulerDoubleClick"
+               class="org.eclipse.debug.ui.actions.RulerToggleBreakpointActionDelegate"
+               definitionId="org.eclipse.debug.ui.commands.ToggleBreakpoint"
+               id="com.sap.jvm.debugging.ui.editors.DisassembleSourceEditorBreakpointAction"
+               label="Breakpoint Action"
+               style="push">
+         </action>
+      </editorContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors.annotationTypes">
+      <type
+            markerType="com.sap.jvm.debugging.ByteCodeBreakpointMarker"
+            name="com.sap.jvm.debugging.ByteCodeBreakpointAnnotationType">
+      </type>
+      <type
+            markerType="com.sap.jvm.debugging.DecompiledCodeBreakpointMarker"
+            name="com.sap.jvm.debugging.DecompiledCodeBreakpointAnnotationType">
+      </type>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors.markerAnnotationSpecification">
+      <specification
+            annotationImageProvider="com.sap.jvm.debugging.ui.editors.SapJvmAnnotationImageProvider"
+            annotationType="com.sap.jvm.debugging.ByteCodeBreakpointAnnotationType"
+            colorPreferenceKey="sapJvmBreakpointIndicationColor"
+            colorPreferenceValue="0,0,255"
+            contributesToHeader="false"
+            highlightPreferenceKey="sapJvmBreakpointHeighlight"
+            highlightPreferenceValue="false"
+            icon="$nl$/icons/full/obj16/brkp_obj.gif"
+            includeOnPreferencePage="false"
+            isGoToNextNavigationTarget="false"
+            isGoToPreviousNavigationTarget="false"
+            overviewRulerPreferenceKey="sapJvmBreakpointOverviewRuler"
+            overviewRulerPreferenceValue="false"
+            presentationLayer="3"
+            showInNextPrevDropdownToolbarAction="false"
+            textPreferenceKey="sapJvmBreakpointText"
+            textPreferenceValue="false"
+            textStylePreferenceKey="sapJvmBreakpointTextStyle"
+            textStylePreferenceValue="SQUIGGLES"
+            verticalRulerPreferenceKey="sapJvmBreakpointVerticalRuler"
+            verticalRulerPreferenceValue="true">
+      </specification>
+      <specification
+            annotationImageProvider="com.sap.jvm.debugging.ui.editors.SapJvmAnnotationImageProvider"
+            annotationType="com.sap.jvm.debugging.DecompiledCodeBreakpointAnnotationType"
+            colorPreferenceKey="sapJvmBreakpointIndicationColor2"
+            colorPreferenceValue="0,0,255"
+            contributesToHeader="false"
+            highlightPreferenceKey="sapJvmBreakpointHeighlight2"
+            highlightPreferenceValue="false"
+            icon="$nl$/icons/full/obj16/brkp_obj.gif"
+            includeOnPreferencePage="false"
+            isGoToNextNavigationTarget="false"
+            isGoToPreviousNavigationTarget="false"
+            overviewRulerPreferenceKey="sapJvmBreakpointOverviewRuler2"
+            overviewRulerPreferenceValue="false"
+            presentationLayer="3"
+            showInNextPrevDropdownToolbarAction="false"
+            textPreferenceKey="sapJvmBreakpointText2"
+            textPreferenceValue="false"
+            textStylePreferenceKey="sapJvmBreakpointTextStyle2"
+            textStylePreferenceValue="SQUIGGLES"
+            verticalRulerPreferenceKey="sapJvmBreakpointVerticalRuler2"
+            verticalRulerPreferenceValue="true">
+      </specification>
+   </extension>
+   <extension
+         point="org.eclipse.ui.elementFactories">
+      <factory
+            class="com.sap.jvm.debugging.ui.editors.SapJvmSourceViewEditorFactory"
+            id="com.sap.jvm.debugging.editors.SapJvmSourceViewEditorFactory">
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.detailPaneFactories">
+      <detailFactories
+            class="com.sap.jvm.debugging.ui.presentation.BreakpointDetailPaneFactory"
+            id="com.sap.jvm.debugging.editors.SapJvmBreakpointDetailPaneFactory">
+      </detailFactories>
+   </extension>
+</plugin>

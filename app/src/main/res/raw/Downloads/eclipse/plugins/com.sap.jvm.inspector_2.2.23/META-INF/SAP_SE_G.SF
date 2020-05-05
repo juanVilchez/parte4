@@ -1,0 +1,72 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: 7y7/8JUuylDzk2mrYvbfAFkgH/qib
+ hUbV1wCWrpkC00=
+SHA-256-Digest-Manifest: NGCzIczlEjW1Bug6lxKkLmD8ing9myjeoYcJw/IKO6w=
+Created-By: 1.8.0_45 (Oracle Corporation)
+
+Name: natives/com/sap/jvm/inspector/ntintel/sapjvm_inspector.pdb
+SHA-256-Digest: nNQvZEjf6VJPz1PWPbRspS/4MOHBywyT2ieWbgTW5xg=
+
+Name: natives/com/sap/jvm/inspector/sun_64/libsapjvm_inspector.so
+SHA-256-Digest: NkOQubZ8ooL3AzWZpt7ckzRLlgyCAmo1NpP6EfSb4dA=
+
+Name: natives/com/sap/jvm/inspector/linuxia64/libsapjvm_inspector.so
+SHA-256-Digest: t15lvushYH7aLx6sEINcINTl3Yqj5C2GsXGovhNiamo=
+
+Name: natives/com/sap/jvm/inspector/ntia64/sapjvm_inspector.pdb
+SHA-256-Digest: RT9N/ina3hIc1moJERZg6iEPRl9hbbUEFyizu5QborM=
+
+Name: natives/com/sap/jvm/inspector/hp_64/libsapjvm_inspector.sl
+SHA-256-Digest: AYvk8y8s0MtxAAVp677zVZ2zT10Vdlmt6bpNk+tYKcc=
+
+Name: natives/com/sap/jvm/inspector/rs6000_64/libsapjvm_inspector.so
+SHA-256-Digest: r+LOEv3Hi0ZorTmLZ24ZqCHYYhnLWSPVTbUwvfrEnXw=
+
+Name: natives/com/sap/jvm/inspector/ntintel/sapjvm_inspector.dll
+SHA-256-Digest: 3Erx6u2ep7m83SMpMr8Wuo0+hsQDX8OVFtuPNhOoBS8=
+
+Name: natives/com/sap/jvm/inspector/sunx86_64/libsapjvm_inspector.so
+SHA-256-Digest: z7K0UKcgRYTMkmpRTjasPMFF/dHn1lgFDfTwjfWinDo=
+
+Name: natives/com/sap/jvm/inspector/bsdx86_64/libsapjvm_inspector.dyli
+ b
+SHA-256-Digest: 7t5cELwBnUBkX6e0P2/e52p3ti3AfZGF+sECkFVHOBc=
+
+Name: natives/com/sap/jvm/inspector/as400_pase_64/libsapjvm_inspector.
+ so
+SHA-256-Digest: zpc1QgbKXystOACl9ql4UAgWNgtjnF/jIkJUVKfRm8A=
+
+Name: natives/com/sap/jvm/inspector/linuxintel/libsapjvm_inspector.so
+SHA-256-Digest: sYmyF3boMu2a4jMJyAsw74F0gh8YETdZ0rqCusaHCFs=
+
+Name: natives/com/sap/jvm/inspector/linuxx86_64/libsapjvm_inspector.so
+SHA-256-Digest: EnXpCQs2kd7RgN8m6S+2sy6HQJSxYbpeawuafPLG20c=
+
+Name: natives/com/sap/jvm/inspector/linuxppc64/libsapjvm_inspector.so
+SHA-256-Digest: yP8QeJmf3ySvgZWGHwswZe/14XgOAT9a2ZPRpNZdFyU=
+
+Name: natives/com/sap/jvm/inspector/ntamd64/sapjvm_inspector.pdb
+SHA-256-Digest: tIYSlDyC0Wj/W5CvjAmZlzqvhvzb7E8GQ3paC63krXs=
+
+Name: natives/com/sap/jvm/inspector/linuxs390x/libsapjvm_inspector.so
+SHA-256-Digest: eskRRPfYcUFLvp0iU6f9YkqJPfPyvmfr3YeyY+2kFGU=
+
+Name: natives/com/sap/jvm/inspector/hpia64/libsapjvm_inspector.so
+SHA-256-Digest: bKO9rk5KeMn3GAEFSyZzynTEdO2ezrOttjofSf8wFZ8=
+
+Name: natives/com/sap/jvm/inspector/linuxppc64le/libsapjvm_inspector.s
+ o
+SHA-256-Digest: DjXJkNztJcpcxZJWbfOffRUXmYjqCETXqZUp4YtLme8=
+
+Name: natives/com/sap/jvm/inspector/ntamd64/sapjvm_inspector.dll
+SHA-256-Digest: Crz9ESHEiF4z+v2I11zHrIm0vCRcwH/ACNkovJEN+pk=
+
+Name: sapjvm_inspector.jar
+SHA-256-Digest: UBFf3scn5XLUAkaXavS0Y0OZT6SV07KlGWO8WrFNLkA=
+
+Name: natives/com/sap/jvm/inspector/bsdintel/libsapjvm_inspector.dylib
+SHA-256-Digest: tanzXx6wInabnGEt5bAnkk41XAXEW2fKaNmAmJPY+pM=
+
+Name: natives/com/sap/jvm/inspector/ntia64/sapjvm_inspector.dll
+SHA-256-Digest: Ahw2Bhu/7ndK4i1UXIj+oARy73oGY61tsTyrBwSTM5w=
+

@@ -1,0 +1,84 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.sap.jvm.debugging.ui;singleton:=true
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.debug.core,org.ec
+ lipse.debug.ui,org.eclipse.jface.text;bundle-version="3.3.0",org.ecli
+ pse.jdt.core;bundle-version="3.3.0",org.eclipse.jdt.debug;bundle-vers
+ ion="3.3.0",org.eclipse.jdt.debug.ui;bundle-version="3.2.0",org.eclip
+ se.jdt.junit;bundle-version="3.3.0",org.eclipse.jdt.launching;bundle-
+ version="3.3.0",org.eclipse.jdt.ui;bundle-version="3.3.0",org.eclipse
+ .pde.ui;bundle-version="3.3.0";resolution:=optional,org.eclipse.ui,or
+ g.eclipse.ui.editors;bundle-version="3.3.0",org.eclipse.core.net;bund
+ le-version="1.0.0",org.eclipse.ui.ide;bundle-version="3.3.0",org.ecli
+ pse.equinox.security;bundle-version="1.1.100";resolution:=optional,co
+ m.sap.jvm.tracing;bundle-version="[2.2.23,2.2.23]",com.sap.jvm.util;b
+ undle-version="[2.2.23,2.2.23]",com.sap.jvm.util5;bundle-version="[2.
+ 2.23,2.2.23]",com.sap.jvm.profiling.i18n;bundle-version="[2.2.23,2.2.
+ 23]",com.sap.jvm.debugging.jdi;bundle-version="[2.2.23,2.2.23]",com.s
+ ap.jvm.debugging.core;bundle-version="[2.2.23,2.2.23]",com.sap.jvm.de
+ bugging.presentation;bundle-version="[2.2.23,2.2.23]",com.sap.jvm.deb
+ ugging.controller;bundle-version="[2.2.23,2.2.23]"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: SAP
+SQU-INLINE-STARTBundle-Version: $tools22VersionSQU-INLINE-END
+Ant-Version: Apache Ant 1.9.4
+Export-Package: com.sap.jvm.debugging.api.launching
+Bundle-Name: SAP JVM Debugging UI Frontend Eclipse
+Bundle-Version: 2.2.23
+Bundle-ClassPath: debugging_2.2_ui_eclipse.jar,lib/commons-logging-1.1
+ .1.jar,lib/org.apache.httpcomponents.httpclient_4.2.3.jar,lib/org.apa
+ che.httpcomponents.httpcore_4.2.3.jar
+Bundle-Activator: com.sap.jvm.debugging.ui.Plugin
+Created-By: 5.1.103 (SAP AG)
+SQU-INLINE-STARTRequire-Bundle: org.eclipse.core.runtime,org.eclipse.d
+ ebug.core,org.eclipse.debug.ui,org.eclipse.jface.text;bundle-version=
+ "3.3.0",org.eclipse.jdt.core;bundle-version="3.3.0",org.eclipse.jdt.d
+ ebug;bundle-version="3.3.0",org.eclipse.jdt.debug.ui;bundle-version="
+ 3.2.0",org.eclipse.jdt.junit;bundle-version="3.3.0",org.eclipse.jdt.l
+ aunching;bundle-version="3.3.0",org.eclipse.jdt.ui;bundle-version="3.
+ 3.0",org.eclipse.pde.ui;bundle-version="3.3.0";resolution:=optional,o
+ rg.eclipse.ui,org.eclipse.ui.editors;bundle-version="3.3.0",org.eclip
+ se.core.net;bundle-version="1.0.0",org.eclipse.ui.ide;bundle-version=
+ "3.3.0",org.eclipse.equinox.security;bundle-version="1.1.100";resolut
+ ion:=optional,com.sap.jvm.tracing;bundle-version=$nonToolsRange,com.s
+ ap.jvm.util;bundle-version=$nonToolsRange,com.sap.jvm.util5;bundle-ve
+ rsion=$nonToolsRange,com.sap.jvm.profiling.i18n;bundle-version=$tools
+ 22Range,com.sap.jvm.debugging.jdi;bundle-version=$tools22Range,com.sa
+ p.jvm.debugging.core;bundle-version=$tools22Range,com.sap.jvm.debuggi
+ ng.presentation;bundle-version=$tools22Range,com.sap.jvm.debugging.co
+ ntroller;bundle-version=$tools22RangeSQU-INLINE-END
+
+Name: lib/org.apache.httpcomponents.httpcore_4.2.3.jar
+SHA-256-Digest: +kgwwcdAO12+BKNWeCo4de6BLjym7konkVeh1KAl4VI=
+
+Name: plugin.xml
+SHA-256-Digest: 3RN119lyE/lu/Hsu5GWbuJY1TqQ1A3wh1OER1wGo8z4=
+
+Name: icons/insp_sbook.gif
+SHA-256-Digest: a8shWeeu8fReQtfeJM6WdmJAIvOFHec8ALR5GGFXios=
+
+Name: debugging_2.2_ui_eclipse.jar
+SHA-256-Digest: lM6u7lI4JtHkdDlYqQIo3MdXDuuZgPMVCqQTlsE7OMk=
+
+Name: icons/return_values_options.png
+SHA-256-Digest: CTH1I/erEO9i/EAV7NcmwlEjtmN3B5PeaIyRXQJ9mBs=
+
+Name: plugin.properties
+SHA-256-Digest: NQtlFwQEpjkzXGauU24hlUwhpCWBCeXJOBbfneXuEiI=
+
+Name: lib/org.apache.httpcomponents.httpclient_4.2.3.jar
+SHA-256-Digest: W+TWGgUxY4rV2a+FgKIMj5LJXf5PHWTXg7ycftanrC0=
+
+Name: icons/neo.gif
+SHA-256-Digest: EA9gQK6Cp+jo/py5YhQGSL/uKrXeAtqyGcIafyl+xkc=
+
+Name: icons/disassemble_editor.gif
+SHA-256-Digest: CrMFSjRwwiZaqfeDDax3YFHhml7GM/f62rLOcU4+tmw=
+
+Name: icons/watch_exp.gif
+SHA-256-Digest: /o4AjG8ZBhVeUBCPYm6+bw+/aXqgCpjgdujk1cfQJtk=
+
+Name: lib/commons-logging-1.1.1.jar
+SHA-256-Digest: zm+RPK0fDbOq1wGG1lxbx//Mmpnj/o4LE3MSgZ98Ni8=
+

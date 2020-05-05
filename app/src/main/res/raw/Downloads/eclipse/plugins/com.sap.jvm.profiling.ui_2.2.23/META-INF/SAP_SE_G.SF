@@ -1,0 +1,111 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: LWk5H0duROiiHBpc/3UAXrY2u17K9
+ Unkz3r/kappVNk=
+SHA-256-Digest-Manifest: aK7Aiy+JY+LpwEQ5+aaQYQHPTTYMgsfY394ovvjUnI4=
+Created-By: 1.8.0_45 (Oracle Corporation)
+
+Name: icons/method_parameter_analysis.gif
+SHA-256-Digest: o/hn5pkMBdgFfn0X6NiyabbwgVaJN8QR8xEjCGKWMNs=
+
+Name: plugin.xml
+SHA-256-Digest: 0XvEELn2EZBfl/9fbAT56XNnq+YBxnOX4y/c4bvNymI=
+
+Name: icons/thread_analysis.gif
+SHA-256-Digest: L1nW7MqG9fzC04QyaMSzMkOWxx/x08n6cgla64+WB3k=
+
+Name: icons/profiler.gif
+SHA-256-Digest: HYbaMPlNqQJE6dNYODjDquBueg7/f7dOzRkr7W3Jyag=
+
+Name: icons/perspective.gif
+SHA-256-Digest: aBx3rFswKzcR9WPBszacPhc8OZJlfVJ0fQE4/RjCTvM=
+
+Name: icons/io_analysis.gif
+SHA-256-Digest: y38oGJs4cd1kUiq+6yEUPmmM/PPAXRBWwzRsvZ1clWY=
+
+Name: intro/whatsnewExtensionContent.xml
+SHA-256-Digest: 7i0llScU7kELLcLfqMAEEbSwZPtLZOSGHkBZvCPhrno=
+
+Name: icons/neo.gif
+SHA-256-Digest: a7ihEXJoxz0WrjmQTW389GVoS1cIM1AfNR+ttzyhQAA=
+
+Name: icons/online_prof_app.gif
+SHA-256-Digest: Eth6yUM2+LBWMumRN7OH1mvBoKY+in1NOTm4p9EZJdE=
+
+Name: intro/css/graphics/obj_48/profiler.png
+SHA-256-Digest: 8QCmbtTN7bOhlsxloxv566TbZJgM0z0WG+gZe63bDQg=
+
+Name: icons/profiling_exc.gif
+SHA-256-Digest: ypJ8MvdkfHjbhYKfujSeRnSA9Q1M29Z/JOBqHdDNKJg=
+
+Name: about.ini
+SHA-256-Digest: 61w5ZMhTWJAmglkeEnoXVTcZi6mMcvqaUVAIBZTNZHc=
+
+Name: icons/net_analysis.gif
+SHA-256-Digest: 5oFTmkqKCW7pOefw0d5TxannRMNT3pXfJXgV1d98uHQ=
+
+Name: plugin.properties
+SHA-256-Digest: 1SuFRDRfv/DWbzSB3NtL1OSR29bGb7hFthJPRXsoCEE=
+
+Name: icons/method_analysis.gif
+SHA-256-Digest: OahumxGUP2my3+q47GTS1tmQ/5k7FuHgrqAbjnYGiI0=
+
+Name: intro/css/graphics/obj_48/profiler_group.png
+SHA-256-Digest: 91M3pj22ArMR2GzcJa+rqjjXDho30YNUxHJ00J8/a+o=
+
+Name: icons/offline_prof_app.gif
+SHA-256-Digest: pV6H/RTFHjdVdwH9OlwyS4OLELQuWIpZzHnh/51tlxE=
+
+Name: icons/performance_analysis.gif
+SHA-256-Digest: kRUvz3bGpuSZOT+4kKa4S34CTxMyxIEhZp0MOFWOveI=
+
+Name: icons/vm_monitor.gif
+SHA-256-Digest: MafnghA25ym9h2wL4arMj97d2BsLmlSoa+f3JAoa4do=
+
+Name: intro/css/overview.css
+SHA-256-Digest: 7SqEi9htN+0AUrUACZ5+cOzrh5WD45eC65VpXxpTWwg=
+
+Name: icons/profileLast.gif
+SHA-256-Digest: d7Lk1YlU70LNnoCNeYlflyWBnjva6qifIVBpRtc/i3Y=
+
+Name: icons/synchronization_analysis.png
+SHA-256-Digest: 6B4XD538asxlAKccgPVR6lOAmunHx8s31rlTZAG4Y30=
+
+Name: intro/overviewExtensionContent.xml
+SHA-256-Digest: uMS2E5jn+6yv7aJeiulzGJd0Wk+IFg2amb4w4jTGL08=
+
+Name: intro/css/whatsnew.css
+SHA-256-Digest: PlwJA/BYval3P0HPxmsSuW1vs5OiMqekFd7YYdLgaWk=
+
+Name: icons/parameter.gif
+SHA-256-Digest: pwO/AoGZR7kKGHHBjON8B46pzALVnqHVSQtIDOxNfEk=
+
+Name: icons/profileLast_disabled.gif
+SHA-256-Digest: kYg1ddfVKApZOWvXC02EqlIJsZlCH51vzTM097xkRwA=
+
+Name: intro/css/graphics/obj_48/profilerhov.png
+SHA-256-Digest: vcwJFdJ3hC7b4OF4trTL4LH1N4ymHYq8ilcI55w/GFE=
+
+Name: icons/prof_app.gif
+SHA-256-Digest: 8HjVPEr9sy0CTo+9RxXroKIlOHnL5IV9uplx0qTGf7w=
+
+Name: intro/css/swt.properties
+SHA-256-Digest: O7VtRLFIawV/8dDAEcI2DSGjdRyMb6+pNazOndtsigs=
+
+Name: intro/css/whatsnew.properties
+SHA-256-Digest: N9mgGTr/Tx1+MwOVb9zjvR3E2la154oE3oCFS/PAEXo=
+
+Name: icons/allocation_analysis.gif
+SHA-256-Digest: W1VZ0jHXy8a3x6JsFTmNKm83CV48Ww67utxeYr46z4E=
+
+Name: icons/vm_explorer.gif
+SHA-256-Digest: Pq0YU+dVySzzz+3nflcccxupUzyM3cEUKSN6bz0069I=
+
+Name: icons/profilingWiz.gif
+SHA-256-Digest: lPao77l1q83LaKWn7XbVcNm9NliLAsv+Xaf/dYoJYAU=
+
+Name: icons/vm_monitor_disabled.gif
+SHA-256-Digest: 05kNbbzES/9kcAowDgHJsgYUC6LJdsPVKF4rqPV+46g=
+
+Name: profiling_2.2_frontend.jar
+SHA-256-Digest: p2uIjzfpvIZTOR2iyGs5PXIu5W7qJuz22ty4f0xQVWo=
+

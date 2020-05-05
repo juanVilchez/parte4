@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.sap.jvm.util5;singleton:=true
+Require-Bundle: com.sap.jvm.tracing;bundle-version="[2.2.23,2.2.23]",c
+ om.sap.jvm.util;bundle-version="[2.2.23,2.2.23]"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: SAP
+SQU-INLINE-STARTBundle-Version: $nonToolsVersion SQU-INLINE-END
+Ant-Version: Apache Ant 1.9.4
+Export-Package: com.sap.jvm.util.cloud,com.sap.jvm.util.concurrent,com
+ .sap.jvm.util.http;uses:="org.apache.http.client",com.sap.jvm.util.jf
+ ace,com.sap.jvm.util.log,com.sap.jvm.util.misc,com.sap.jvm.util.pair,
+ com.sap.jvm.util.persistence,com.sap.jvm.util.threads
+Bundle-Name: SAP JVM Internal Utility Classes for J2SE5 and above
+Bundle-Version: 2.2.23 
+Bundle-ClassPath: sapjvm_util_5.jar
+Created-By: 5.1.103 (SAP AG)
+SQU-INLINE-STARTRequire-Bundle: com.sap.jvm.tracing;bundle-version=$no
+ nToolsRange,com.sap.jvm.util;bundle-version=$nonToolsRangeSQU-INLINE-
+ END
+
+Name: sapjvm_util_5.jar
+SHA-256-Digest: CP2NXaSoqahrmQjrqAsSclvQmbr8U4RUPqqLPrnopvQ=
+

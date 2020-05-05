@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.sap.jvm.debugging.jdi;singleton:=true
+Require-Bundle: com.sap.jvm.util5;bundle-version="[2.2.23,2.2.23]"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: SAP
+SQU-INLINE-STARTBundle-Version: $tools22Version SQU-INLINE-END
+Ant-Version: Apache Ant 1.9.4
+Export-Package: com.sap.jvm.jdi,com.sap.jvm.jdi.connect,com.sap.jvm.jd
+ i.connect.spi,com.sap.jvm.jdi.event,com.sap.jvm.jdi.request,com.sap.j
+ vm.tools.example.debug.expr,com.sap.jvm.tools.jdi
+Bundle-Name: SAP JVM Debugger JDI
+Bundle-Version: 2.2.23 
+Bundle-ClassPath: debugging_2.2_jdi.jar
+Created-By: 5.1.103 (SAP AG)
+SQU-INLINE-STARTRequire-Bundle: com.sap.jvm.util5;bundle-version=$nonT
+ oolsRangeSQU-INLINE-END
+
+Name: debugging_2.2_jdi.jar
+SHA-256-Digest: jmceCz10xoAcdEvlQeycFfRKoHZD2152ketM/2kPpc0=
+

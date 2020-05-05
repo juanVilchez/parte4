@@ -1,0 +1,139 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.sap.jvm.inspector;singleton:=true
+Require-Bundle: com.sap.jvm.util;bundle-version="[2.2.23,2.2.23]",com.
+ sap.jvm.util5;bundle-version="[2.2.23,2.2.23]",com.sap.jvm.tracing;bu
+ ndle-version="[2.2.23,2.2.23]" 
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: SAP
+SQU-INLINE-STARTBundle-Version: $nonToolsVersionSQU-INLINE-END
+Ant-Version: Apache Ant 1.9.4
+Export-Package: com.sap.jvm.impl.monitor.remoteCluster,com.sap.jvm.imp
+ l.monitor.vm,com.sap.jvm.inspector,com.sap.jvm.inspector.board,com.sa
+ p.jvm.inspector.cluster,com.sap.jvm.inspector.debugging,com.sap.jvm.i
+ nspector.filesocket.remote,com.sap.jvm.inspector.jvmmon,com.sap.jvm.m
+ onitor.cluster,com.sap.jvm.monitor.remoteCluster,com.sap.jvm.monitor.
+ vm
+Bundle-Name: SAP JVM Inspector Infrastructure
+Bundle-Version: 2.2.23
+Bundle-ClassPath: sapjvm_inspector.jar
+Bundle-NativeCode: natives/com/sap/jvm/inspector/as400_pase_64/libsapj
+ vm_inspector.so; osname="os400"; processor="ppc64",                  
+ natives/com/sap/jvm/inspector/bsdintel/libsapjvm_inspector.dylib; osn
+ ame="macosx"; processor="x86"; processor="i386",                  nat
+ ives/com/sap/jvm/inspector/bsdx86_64/libsapjvm_inspector.dylib; osnam
+ e="macosx"; processor="amd64"; processor="x86_64",                  n
+ atives/com/sap/jvm/inspector/hp_64/libsapjvm_inspector.sl; osname="hp
+ -ux"; processor="pa_risc2.0w"; processor="pa_risc2.0",               
+    natives/com/sap/jvm/inspector/hpia64/libsapjvm_inspector.so; osnam
+ e="hp-ux"; processor="ia64"; processor="ia64n",                  nati
+ ves/com/sap/jvm/inspector/linuxia64/libsapjvm_inspector.so; osname="l
+ inux"; processor="ia64",                  natives/com/sap/jvm/inspect
+ or/linuxintel/libsapjvm_inspector.so; osname="linux"; processor="i386
+ "; processor="X86",                  natives/com/sap/jvm/inspector/li
+ nuxppc64/libsapjvm_inspector.so; osname="linux"; processor="ppc64",  
+                 natives/com/sap/jvm/inspector/linuxppc64le/libsapjvm_
+ inspector.so; osname="linux"; processor="ppc64le",                  n
+ atives/com/sap/jvm/inspector/linuxs390x/libsapjvm_inspector.so; osnam
+ e="linux"; processor="zarch_64"; processor="s390x",                  
+ natives/com/sap/jvm/inspector/linuxx86_64/libsapjvm_inspector.so; osn
+ ame="linux"; processor="amd64"; processor="x86_64",                  
+ natives/com/sap/jvm/inspector/ntamd64/sapjvm_inspector.dll; osname="w
+ in32"; osname="Windows XP"; osname="Windows Vista";                  
+      osname="windows 7"; osname="windows 8"; osname="windows 8.1"; os
+ name="windows 10"; osname="Windows 2003"; osname="Windows Server 2008
+ ";                      osname="Windows Server 2008 R2"; osname="wind
+ ows server 2012"; osname="windows server 2012 r2"; osname="Windows Se
+ rver 2016";                      processor="amd64",                  
+ natives/com/sap/jvm/inspector/ntia64/sapjvm_inspector.dll; osname="wi
+ n32"; osname="Windows XP"; osname="Windows Vista";                   
+    osname="windows 7"; osname="windows 8"; osname="windows 8.1"; osna
+ me="windows 10"; osname="Windows 2003"; osname="Windows Server 2008";
+                       osname="Windows Server 2008 R2"; osname="window
+ s server 2012"; osname="windows server 2012 r2"; osname="Windows Serv
+ er 2016";                      processor="ntia64",                  n
+ atives/com/sap/jvm/inspector/ntintel/sapjvm_inspector.dll; osname="wi
+ n32"; osname="Windows XP"; osname="Windows Vista";                   
+    osname="windows 7"; osname="windows 8"; osname="windows 8.1"; osna
+ me="windows 10"; osname="Windows 2003"; osname="Windows Server 2008";
+                       osname="Windows Server 2008 R2"; osname="window
+ s server 2012"; osname="windows server 2012 r2"; osname="Windows Serv
+ er 2016";                      processor="i386"; processor="X86"; pro
+ cessor="x86",                  natives/com/sap/jvm/inspector/rs6000_6
+ 4/libsapjvm_inspector.so; osname="aix"; processor="ppc64",           
+        natives/com/sap/jvm/inspector/sun_64/libsapjvm_inspector.so; o
+ sname="sunos"; processor="sparcv9"; processor="sparc",               
+    natives/com/sap/jvm/inspector/sunx86_64/libsapjvm_inspector.so; os
+ name="sunos"; processor="amd64"; processor="x86"
+Created-By: 5.1.103 (SAP AG)
+SQU-INLINE-STARTRequire-Bundle: com.sap.jvm.util;bundle-version=$nonTo
+ olsRange,com.sap.jvm.util5;bundle-version=$nonToolsRange,com.sap.jvm.
+ tracing;bundle-version=$nonToolsRange SQU-INLINE-END
+
+Name: natives/com/sap/jvm/inspector/ntintel/sapjvm_inspector.pdb
+SHA-256-Digest: sV2AOed1dAq3wzilaBbRZxpyV9ka92dw05X7Y7z2ebQ=
+
+Name: natives/com/sap/jvm/inspector/sun_64/libsapjvm_inspector.so
+SHA-256-Digest: DjcxjDe4evylDbLWPUlQluzYnpdve82KWF8syV1DUaY=
+
+Name: natives/com/sap/jvm/inspector/linuxia64/libsapjvm_inspector.so
+SHA-256-Digest: XQ2t3caTlltG5rBJf1gfxZP16C1sZZoz+VvgCp49c80=
+
+Name: natives/com/sap/jvm/inspector/ntia64/sapjvm_inspector.pdb
+SHA-256-Digest: iJag8UM6dX+LmeGozSVrOVMZSfH+2S35Nmq7dS5rVyQ=
+
+Name: natives/com/sap/jvm/inspector/hp_64/libsapjvm_inspector.sl
+SHA-256-Digest: sVwaZqSeJQjgAW8rnSGv61beez+2KPVFU3U9QxFp5LM=
+
+Name: natives/com/sap/jvm/inspector/rs6000_64/libsapjvm_inspector.so
+SHA-256-Digest: ipRE4MLRv8k00lmgECUq/CudwmfZwDNBGzwjv4PZBmQ=
+
+Name: natives/com/sap/jvm/inspector/ntintel/sapjvm_inspector.dll
+SHA-256-Digest: vaIySX3kB46YT72RXPddaoZd/Omj7AL4mB4MZPpb7qg=
+
+Name: natives/com/sap/jvm/inspector/sunx86_64/libsapjvm_inspector.so
+SHA-256-Digest: 8OXEBkP7JCR5tRQkixkv5fFSSzGVmZ66wz8bsKs5yVA=
+
+Name: natives/com/sap/jvm/inspector/bsdx86_64/libsapjvm_inspector.dyli
+ b
+SHA-256-Digest: LdJStY0TSr1FK4R7PMPwan8FVhIxA307gK5tLFxKZ/U=
+
+Name: natives/com/sap/jvm/inspector/as400_pase_64/libsapjvm_inspector.
+ so
+SHA-256-Digest: ipRE4MLRv8k00lmgECUq/CudwmfZwDNBGzwjv4PZBmQ=
+
+Name: natives/com/sap/jvm/inspector/linuxintel/libsapjvm_inspector.so
+SHA-256-Digest: Djk7Ndy/0eN3GUZEsol4XyG8GyDBO0D8fbUauHNAjo0=
+
+Name: natives/com/sap/jvm/inspector/linuxx86_64/libsapjvm_inspector.so
+SHA-256-Digest: xROdTSPsR7zOmaY4sZa6fADU7xzQVDncQosVdHKHY9A=
+
+Name: natives/com/sap/jvm/inspector/linuxppc64/libsapjvm_inspector.so
+SHA-256-Digest: GtPLDfAQ19AwSDW6s7nd1/UdayloBOMcQLkkRXfi85M=
+
+Name: natives/com/sap/jvm/inspector/ntamd64/sapjvm_inspector.pdb
+SHA-256-Digest: Za2RnvaGnVrrevxkx+QV+80VTvEs/BGxMKuEVJK2OV4=
+
+Name: natives/com/sap/jvm/inspector/linuxs390x/libsapjvm_inspector.so
+SHA-256-Digest: 22K4MizqCIcVbB+9lmRej3ZuboyMvdA/OlUZm0uGzbA=
+
+Name: natives/com/sap/jvm/inspector/hpia64/libsapjvm_inspector.so
+SHA-256-Digest: bEUAfNkMWUZm/VHepw2NASsDN7pZe6uVlsXaqPIqys0=
+
+Name: natives/com/sap/jvm/inspector/linuxppc64le/libsapjvm_inspector.s
+ o
+SHA-256-Digest: 43QhFzeiR8jpt2YF7NFfvJOzHgnbUgHNQzMKARudvzQ=
+
+Name: natives/com/sap/jvm/inspector/ntamd64/sapjvm_inspector.dll
+SHA-256-Digest: hbju9GSPjVvSNBU8fYsp32WVfwjbH7kvohONDXe+6VQ=
+
+Name: sapjvm_inspector.jar
+SHA-256-Digest: B3sxsqrPy3WHlt2AxPT+u3/tCYqCaOKwVQzD0WiTQUU=
+
+Name: natives/com/sap/jvm/inspector/bsdintel/libsapjvm_inspector.dylib
+SHA-256-Digest: 7bk4zz2Dpa5BQNzZz+z9Dw6c3QACcvBZJgfYnNDWitM=
+
+Name: natives/com/sap/jvm/inspector/ntia64/sapjvm_inspector.dll
+SHA-256-Digest: 1/HeQtxtuwH26duNryf7Dmg4kDzWOUOiqoIWCuA6Jbw=
+
