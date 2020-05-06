@@ -3,6 +3,7 @@ package com.example.miparte4;
 import android.app.IntentService;
 import android.content.Intent;
 import android.os.SystemClock;
+import android.view.View;
 
 public class IntentServiceOperacion extends IntentService {
     public IntentServiceOperacion() {
@@ -17,6 +18,6 @@ public class IntentServiceOperacion extends IntentService {
         i.addCategory(Intent.CATEGORY_DEFAULT);
         i.putExtra("resultado", n*n);
         sendBroadcast(i);
-
+        //
     }
 }

@@ -21,10 +21,21 @@
             android:onClick="calcularOperacion"
             android:text="Calcular operación" />
     </LinearLayout>
-    <TextView
-        android:id="@+id/salida"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text=" "
-        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/miprogress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/salida"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" "
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </FrameLayout>
 </LinearLayout>
