@@ -39,4 +39,8 @@ public class Servicio extends Activity {
     public void anuncio(View view) {
         startActivity(new Intent(this,Anuncio_personalizado.class));
     }
+
+    public void intent(View view) {
+        startActivity(new Intent(this,MiIntentService.class));
+    }
 }
